@@ -1,0 +1,151 @@
+//import global styles
+@import "../styles/style.scss";
+//navigation
+.navigation{
+    nav{
+        a:nth-child(4){
+            color: #e8663c;
+        }
+    }
+}
+//main
+.portfolio__links{
+    margin-top: 45px;
+    margin-bottom: 45px;
+    margin-left: 20px;
+    font-family: "Bebas Neue", cursive;
+    a{
+        font-size: 20px;
+        color: #b9b9b9;
+        margin-right: 16px;
+    }
+    a:first-child{
+        color: #fff;
+        background: #e8663c;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 31px;
+        width: 43px;
+    }
+    a:first-child:hover{
+        color: #fff;
+    }
+    a:last-child{
+        margin-right: 0;
+    }
+    a:hover{
+        color: #e8663c;
+        transition: all ease 0.4s; 
+    }
+}
+.portfolio__title-wrapper{
+    position: relative;
+    .grid-container:before{
+        content: "";
+        display: inline-block;
+        position: absolute;
+        min-width: 100%;
+        left: 0;
+        height: 61px;
+        background: rgba(235, 121, 84, 0.6);
+        z-index: -1;
+    }
+}
+.portfolio__items{
+    .cell{
+        .grid-x{
+            .cell{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+.portfolio__title-item{
+    font-family: "Bebas Neue", cursive;
+    background: #e8663c;
+    min-height: 61px;
+    border-left: 20px solid #fff;
+    border-right: 20px solid #fff;
+    p{
+        color: #fff;
+        font-size: 32px;
+        padding-top: 14px;
+        padding-left: 20px;
+    }
+}
+.recent-work__card-info{
+    border-bottom: 1px solid #b9b9b9;
+    border-left: 1px solid #b9b9b9;
+    border-right: 1px solid #b9b9b9;
+    margin-top: -4px;
+    padding-top: 10px;
+    padding-left: 12px;
+    p{
+        font-family: "Bebas Neue", cursive;
+        font-size: 22px;
+        color: #b9b9b9;
+    }
+    p:last-child{
+        padding-bottom: 11px;
+        font-size: 18px;
+        color: #e8663c;
+    }
+}
+.recent-work__link{
+    margin-bottom: 45px;
+}
+.recent-work__link:hover{
+    transform: translate(0, -10px);
+    transition: all ease 0.4s;
+    .recent-work__card{
+        position: relative;
+        img{
+            filter: brightness(25%);
+            transition: all ease 0.4s;
+        }
+        &:before{
+            content: "+";
+            font-family: "Bebas Neue", cursive;
+            color: rgba($color: #000, $alpha: 0.7);
+            display: flex;
+            position: absolute;
+            z-index: 2;
+            justify-content: center;
+            align-items: center;
+            top: 80px;
+            left: 92px;
+            width: 37px;
+            height: 35px;
+            background: rgba($color: #fff, $alpha: 0.5);
+            padding-top: 2px;
+            font-size: 60px;
+            transition: all ease 0.4s;
+        }
+        transition: all ease 0.4s;
+    }
+}
+//media queries for portfolio.html
+@media screen and (max-width: 1023.9px) {
+    .portfolio__links{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 371px) {
+    .portfolio__links{
+        flex-direction: column;
+        a{
+            margin-right: 0;
+            margin-top: 20px;
+        }
+        a:first-child{
+            margin-top: 0;
+        }
+    }
+}

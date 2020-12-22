@@ -1,0 +1,488 @@
+//import global styles
+@import "../styles/style.scss";
+//navigation
+.navigation{
+    nav{
+        a:nth-child(3){
+            color: #e8663c;
+        }
+    }
+}
+//same classes
+.eff{
+    border-bottom: 14px solid transparent;
+    border-image: url("../img/blog/effect-1.png") 15% round;
+    padding-bottom: 30px;
+}
+.slide-link{
+    display: none;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;
+    margin-top: 5px !important;
+    font-size: 14px !important;
+}
+//main
+#reviews{
+    margin-bottom: 48px;
+}
+#blog-news{
+    margin-top: 24px;
+}
+.blog__title-wrapper{
+    position: relative;
+    .grid-container:before{
+        content: "";
+        display: inline-block;
+        position: absolute;
+        min-width: 100%;
+        left: 0;
+        height: 61px;
+        background: rgba(235, 121, 84, 0.6);
+        z-index: -1;
+    }
+}
+.blog__title-item{
+    font-family: "Bebas Neue", cursive;
+    background: #e8663c;
+    min-height: 61px;
+    border-left: 20px solid #fff;
+    border-right: 20px solid #fff;
+    p{
+        color: #fff;
+        font-size: 32px;
+        padding-top: 14px;
+        padding-left: 20px;
+    }
+}
+.slide__item{
+    min-height: 300px;
+}
+.slider-news, .news, .news__advantages{
+    position: relative;
+}
+.action{
+    position: absolute;
+    left: -74px;
+    button{
+        width: 74px;
+        height: 74px;
+        background-color: #e8663c;
+    }
+}
+.action:hover{
+    button{
+        transform: translate(0, -4px);
+        transition: all ease 0.4s;
+    }
+}
+.slide-news{
+    position: relative;
+    max-width: 710px;
+    button{
+        position: absolute;
+        background: transparent;
+        top: 43%;
+        z-index: 2;
+    }
+    button:first-child{
+        left: 28px;
+    }
+    button:last-child{
+        right: 28px;
+    }
+    button:hover{
+        transform: translate(0, -5px);
+        transition: all ease 0.4s;
+    }
+}
+.image-1{
+    background: url("../img/blog/slide-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.image-2{
+    background: url("../img/blog/slide-2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.image-3{
+    background: url("../img/blog/slide-3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.news__info{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 110%;
+    left: 20px;
+}
+.text__item{
+    width: 500px;
+    min-height: 200px;
+    a{
+        font-family: "Bebas Neue", cursive;
+        font-size: 28px;
+        color: #e8663c;
+    }
+    p{
+        margin-top: 20px;
+        max-width: 490px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    a:hover{
+        color: #cccccc;
+        transition: all ease 0.4s;
+    }
+}
+.info__item{
+    width: 160px;
+    p:first-child{
+        font-family: "Bebas Neue", cursive;
+        color: #e8663c;
+        font-size: 20px;
+    }
+    a:nth-child(2){
+        white-space: nowrap;
+        font-size: 12px;
+        color: #cccccc;
+        margin-bottom: 12px;
+    }
+    a:nth-child(2):hover{
+        color: #eeeeee;
+        transition: all ease 0.4s;
+    }
+}
+.blog-news{
+    margin-top: 320px;
+    margin-bottom: 310px;
+}
+.news__item{
+    a:first-child{
+        margin-left: 20px;
+    }
+    .news__text-title{
+        margin-left: 0 !important;
+    }
+}
+.news__item-2{
+    margin-top: 320px;
+}
+.advantages__item{
+    max-width: 657px;
+}
+.news__advantages{
+    .eff{
+        margin-left: 20px;
+    }
+}
+.advantages-1{
+    .advantages__text{
+        max-width: 655px;
+        min-height: 74px;
+        background: #eeeeee;
+        display: flex;
+        align-items: center;
+        p{
+            font-size: 13px;
+            font-style: italic;
+            margin-left: 36px;
+        }
+        p:before{
+            content: "";
+            float: left;
+            background: url("../img/blog/icon-6.png") no-repeat;
+            width: 25px;
+            height: 20px;
+            margin-right: 20px;
+        }
+    }
+}
+.advantages-2{
+    margin-top: 46px;
+    .advantages__title{
+        font-family: "Bebas Neue", cursive;
+        p{
+            font-size: 24px;
+            color: #e8663c;
+        }
+        a{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;
+            color: #e4e4e4;
+            font-size: 14px;
+        }
+        a:hover{
+            color: #cccccc;
+            transition: all ease 0.4s;
+        }
+    }
+    .advantages__text{
+        margin-top: 16px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+.page-list{
+    margin-top: 46px;
+    margin-bottom: 46px;
+    padding-left: 20px;
+    .page-active{
+        background: #e8663c !important;
+    }
+    a{
+        width: 26px;
+        height: 26px;
+        color: #fff;
+        background: rgba(235, 121, 84, 0.6);
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+    a:nth-child(2):hover, a:nth-child(3):hover{
+        background: #e8663c;
+        transition: all ease 0.4s;
+    }
+}
+.about-jetro__title, .categories__title, .photo-gallery__title{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    color: #e8663c;
+    font-family: "Bebas Neue", cursive;
+}
+.about-jetro__title:after{
+    content: "";
+    display: inline-block;
+    background-image: url("../../img/about/title-effect-1.png");
+    margin-top: 5px;
+    margin-left: 14px;
+    width: 126px;
+    height: 14px;
+}
+.categories__title:after{
+    content: "";
+    display: inline-block;
+    background-image: url("../../img/about/title-effect-2.png");
+    margin-top: 5px;
+    margin-left: 14px;
+    width: 135px;
+    height: 14px;
+}
+.photo-gallery__title:after{
+    content: "";
+    display: inline-block;
+    background-image: url("../../img/about/title-effect-3.png");
+    margin-top: 5px;
+    margin-left: 14px;
+    width: 114px;
+    height: 14px;
+}
+.about-jetro__info, .categories__info, .photo-gallery__info{
+    margin-top: 22px;
+    margin-bottom: 37px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    max-width: 220px;
+}
+.categories__info{
+    display: flex;
+    flex-direction: column;
+    a{
+        white-space: nowrap;
+        width: 0;
+        color: #000;
+    }
+    a:hover{
+        color: #414141;
+        transition: all ease 0.4s;
+    }
+}
+//media queries for blog.html
+@media screen and (max-width: 1345.9px) {
+    .action{
+        max-width: 0;
+        position: static;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+}
+@media screen and (max-width: 1023.9px) {
+    #blog-news{
+        .blog-news__wrapper{
+            .grid-container{
+                .grid-x{
+                    .cell:first-child{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .slider-news{
+                            .action{
+                                padding-left: 0;
+                            }
+                        }
+                        .slide-news{
+                            max-width: none;
+                            .news__info{
+                                position: relative;
+                                top: 300px;
+                                left: 0;
+                                padding-left: 0;
+                                flex-direction: row;
+                                .text__item{
+                                    width: auto;
+                                }
+                            }
+                        }
+                        .news__info{
+                            position: static;
+                            padding-top: 20px;
+                            padding-left: 20px;
+                        }
+                        .news__item-2{
+                            margin-top: 40px;
+                        }
+                        .news__item-1, .news__item-2{
+                            .action, .news__info{
+                                padding-left: 0;
+                            }
+                            .news__item a{
+                                margin-left: 0;
+                            }
+                        }
+                        .blog-news{
+                            margin-bottom: 46px;
+                            .news{
+                                .news__item{
+                                    a{
+                                        img{
+                                            max-width: 100%;
+                                        }
+                                    }
+                                    .news__info{
+                                        .info__item, .text__item{
+                                            width: auto;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .news__advantages{
+                            .action, .advantages__item{
+                                margin-left: 0;
+                                padding-left: 0;
+                            }
+                        }
+                        .news{
+                            position: static;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .about-jetro{
+        margin-top: 40px;
+    }
+    .page-list{
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+    }
+    .about-jetro__info, .categories__info, .photo-gallery__info{
+        margin-top: 22px;
+        max-width: none;
+        text-align: center;
+    }
+    .categories__info{
+        display: block;
+        a{
+            width: auto;
+            margin-right: 10px;
+        }
+        a:last-child{
+            margin-right: 0;
+        }
+    }
+    .about-us__info{
+        .grid-x{
+            .cell:nth-child(2) {
+                margin-top: 24px;
+            }
+        }
+    }
+    .photo-gallery__info{
+        margin-bottom: 0;
+    }
+    .blog-news{
+        margin-top: 380px;
+    }
+}
+@media screen and (max-width: 622px) {
+    .news__info{
+        display: flex !important;
+        flex-direction: column-reverse !important;
+        .text__item{
+            text-align: center !important;
+            display: flex !important;
+            justify-content: center !important;
+        }
+        .info__item{
+            display: flex !important;
+            justify-content: space-between !important;
+        }
+    }
+    .slide-news{
+        .slide__item{
+            height: 300px;
+            .news__info{
+                top: 320px !important;
+                padding-top: 0 !important;
+                .info__item{
+                    margin-top: 20px;
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 540px) {
+    .categories__info a{
+        line-height: 25px;
+    }
+    .blog-news{
+        .news__info{
+            .info__item{
+                margin-top: 20px !important;
+            }
+        }
+    }
+}
+@media screen and (max-width: 450px) {
+    .advantages-1{
+        .advantages__text{
+            p{
+                margin: 20px !important;
+                text-align: right;
+            }
+        }
+    }
+    .slide__item{
+        .text__item{
+            .slide-link{
+                display: block;
+            }
+            p:last-child{
+                display: none;
+            }
+        }
+    }
+}
+@media screen and (max-width: 340px) {
+    .action{
+        button{
+            width: 55px;
+            height: 55px;
+        }
+    }
+}

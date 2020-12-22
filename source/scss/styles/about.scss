@@ -1,0 +1,292 @@
+//import global styles
+@import "../styles/style.scss";
+//navigation
+.navigation{
+    nav{
+        a:nth-child(2){
+            color: #e8663c;
+        }
+    }
+}
+//main
+#about-us{
+    margin-bottom: 48px;
+}
+.about-us__wrapper{
+    position: relative;
+    .grid-container:before{
+        content: "";
+        display: inline-block;
+        position: absolute;
+        min-width: 100%;
+        left: 0;
+        height: 61px;
+        background: rgba(235, 121, 84, 0.6);
+        z-index: -1;
+    }
+}
+.about-us__title{
+    font-family: "Bebas Neue", cursive;
+    background: #e8663c;
+    min-height: 61px;
+    border-left: 20px solid #fff;
+    border-right: 20px solid #fff;
+    p{
+        color: #fff;
+        font-size: 32px;
+        padding-top: 14px;
+        padding-left: 20px;
+    }
+}
+.about-us__text{
+    padding-left: 10px;
+}
+.about-us__info, .item-2, .item-3, .item-4, .item-5, .item-6, .item-7, .item-8{
+    margin-top: 24px;
+}
+.about-us__text{
+    p{
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+.item-1{
+    max-width: 720px;
+    p{
+        font-size: 13px;
+    }
+}
+.item-2{
+    display: flex;
+    color: #414141;
+    img{
+        
+        object-fit: none;
+    }
+    p{
+        max-width: 402px;
+        padding-left: 24px;
+    }
+}
+.item-3, .item-4{
+    max-width: 690px;
+    color: #414141;
+}
+.item-5{
+    max-width: 710px;
+    p{
+        position: relative;
+        font-size: 13px;
+        span:first-child{
+            position: absolute;
+            font-size: 36px;
+            font-weight: 700;
+            color: #e8663c;
+        }
+        span:nth-child(2){
+            display: inline-block;
+            margin-top: -8px;
+            margin-left: 30px;
+        }
+    }
+}
+.item-6{
+    position: relative;
+    p{
+        max-width: 600px;
+        margin-left: 60px;
+        font-style: italic;
+    }
+}
+.item-6:before{
+    content: "";
+    position: absolute;
+    border-left: 8px solid #e8663c;
+    left: 32px;
+    height: 80px;
+}
+.item-7{
+    max-width: 720px;
+    .grid-x:first-child{
+        .cell{
+            p{
+                max-width: 370px;
+            }
+        }
+    }
+    .grid-x:nth-child(2){
+        margin-top: 24px;
+        .cell{
+            p{
+                font-size: 13px;
+                max-width: 230px;
+            }
+        }
+    }
+}
+.alert{
+    margin-top: 24px;
+    min-height: 61px;
+    max-width: 671px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+        font-size: 14px;
+        font-style: italic;
+    }
+}
+.lime{
+    border: 1px solid #98c601;
+    background: rgba(152, 198, 1, 0.2);
+    p{
+        color: #98c601;
+    }
+}
+.red{
+    border: 1px solid #eb5439;
+    background: rgba(235, 84, 57, 0.2);
+    p{
+        color: #eb5439;
+    }
+}
+.orange{
+    border: 1px solid #fab418;
+    background: rgba(250, 180, 24, 0.2);
+    p{
+        color: #fab418;
+    }
+}
+.sea{
+    border: 1px solid #4d8fcb;
+    background: rgba(77, 143, 203, 0.2);
+    p{
+        color: #4d8fcb;
+    }
+}
+.about-jetro__title, .categories__title, .photo-gallery__title{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    color: #e8663c;
+    font-family: "Bebas Neue", cursive;
+}
+.about-jetro__title:after{
+    content: "";
+    display: inline-block;
+    background-image: url("../../img/about/title-effect-1.png");
+    margin-top: 5px;
+    margin-left: 14px;
+    width: 126px;
+    height: 14px;
+}
+.categories__title:after{
+    content: "";
+    display: inline-block;
+    background-image: url("../../img/about/title-effect-2.png");
+    margin-top: 5px;
+    margin-left: 14px;
+    width: 135px;
+    height: 14px;
+}
+.photo-gallery__title:after{
+    content: "";
+    display: inline-block;
+    background-image: url("../../img/about/title-effect-3.png");
+    margin-top: 5px;
+    margin-left: 14px;
+    width: 114px;
+    height: 14px;
+}
+.about-jetro__info, .categories__info, .photo-gallery__info{
+    margin-top: 22px;
+    margin-bottom: 37px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    max-width: 220px;
+}
+.categories__info{
+    display: flex;
+    flex-direction: column;
+    a{
+        white-space: nowrap;
+        width: 0;
+        color: #000;
+    }
+    a:hover{
+        color: #414141;
+        transition: all ease 0.4s;
+    }
+}
+//media queries for about.html
+@media screen and (max-width: 1023.9px) {
+    .item-2{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 24px;
+    }
+    .about-us__text, .item-6 p{
+        max-width: none;
+    }
+    .about-us__text{
+        padding-left: 0;
+    }
+    .alert{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .item-3{
+        margin-top: 0;
+    }
+    .item-7{
+        margin-top: 0;
+        .grid-x:nth-child(2){
+            margin-top: 0;
+        }
+        p{
+            margin-top: 20px;
+            max-width: none !important;
+        }
+    }
+    .about-jetro__info, .categories__info, .photo-gallery__info{
+        margin-top: 22px;
+        max-width: none;
+        text-align: center;
+    }
+    .categories__info{
+        display: block;
+        a{
+            width: auto;
+            margin-right: 10px;
+        }
+        a:last-child{
+            margin-right: 0;
+        }
+    }
+    .about-us__info{
+        .grid-x{
+            .cell:nth-child(2) {
+                margin-top: 24px;
+            }
+        }
+    }
+    .photo-gallery__info{
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 572px) {
+    .item-2{
+        flex-direction: column;
+        p{
+            max-width: 550px;
+            padding: 0;
+            margin: 20px auto;
+        }
+    }
+}
+@media screen and (max-width: 540px) {
+    .categories__info a{
+        line-height: 25px;
+    }
+}

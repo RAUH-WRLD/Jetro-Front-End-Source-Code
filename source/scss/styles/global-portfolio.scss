@@ -1,0 +1,147 @@
+//import global styles
+@import "../styles/style.scss";
+//navigation
+.navigation{
+    nav{
+        a:nth-child(4){
+            color: #e8663c;
+        }
+    }
+}
+//main
+
+//portfolio item 12 start =>
+#portfolio-12{
+    margin-top: 24px;
+}
+#related-items{
+    margin-top: 46px;
+    margin-bottom: 48px;
+}
+.portfolio-12__item{
+    display: flex;
+    justify-content: center;
+    a{
+        width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+        img{
+            width: 100%;
+        }
+    }
+}
+.portfolio-12__info{
+    p{
+        text-align: center;
+        margin-top: 20px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+.related-items__items{
+    .grid-x{
+        .cell{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+.related-items__title{
+    a{
+        font-family: "Bebas Neue", cursive;
+        font-size: 32px;
+        color: #e8663c;
+    }
+    a:hover{
+        color: #b9b9b9;
+        transition: all ease 0.4s;
+    }
+    margin-bottom: 20px;
+}
+.related-items__title:after{
+    content: "";
+    display: inline-block;
+    background: url("../img/index/title-effect.png");
+    width: 85%;
+    height: 20px;
+    margin-left: 20px;
+}
+.related-item__card-info{
+    border-bottom: 1px solid #b9b9b9;
+    border-left: 1px solid #b9b9b9;
+    border-right: 1px solid #b9b9b9;
+    margin-top: -4px;
+    padding-top: 10px;
+    padding-left: 12px;
+    p{
+        font-family: "Bebas Neue", cursive;
+        font-size: 22px;
+        color: #b9b9b9;
+    }
+    p:last-child{
+        padding-bottom: 11px;
+        font-size: 18px;
+        color: #e8663c;
+    }
+}
+.related-item__link:hover{
+    transform: translate(0, -10px);
+    transition: all ease 0.4s;
+}
+.portfolio__title-wrapper{
+    position: relative;
+    .grid-container:before{
+        content: "";
+        display: inline-block;
+        position: absolute;
+        min-width: 100%;
+        left: 0;
+        height: 61px;
+        background: rgba(235, 121, 84, 0.6);
+        z-index: -1;
+    }
+}
+.portfolio__title-item{
+    font-family: "Bebas Neue", cursive;
+    background: #e8663c;
+    min-height: 61px;
+    border-left: 20px solid #fff;
+    border-right: 20px solid #fff;
+    p{
+        color: #fff;
+        font-size: 32px;
+        padding-top: 14px;
+        padding-left: 20px;
+    }
+}
+//media queries for portfolio-12.html
+@media screen and (max-width: 1180px) {
+    .related-items__title{
+        text-align: center;
+    }
+    .related-items__title:after{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 1023.9px) {
+    .related-card-3, .related-card-4{
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 639.9px) {
+    .related-card-2{
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 595px) {
+    .related-items__title:after{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 366px) {
+    .related-items__title:after{
+        margin: 0;
+    }
+}
+// <= portfolio item 12 end

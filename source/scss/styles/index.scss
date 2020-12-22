@@ -1,0 +1,285 @@
+//import global styles
+@import "../styles/style.scss";
+//navigation
+.navigation{
+    nav{
+        a:first-child{
+            color: #e8663c;
+        }
+    }
+}
+//main
+.slider-news__wrapper{
+    position: relative;
+    .grid-container:before{
+        content: "";
+        display: inline-block;
+        position: absolute;
+        min-width: 100%;
+        left: 0;
+        height: 61px;
+        background: rgba(235, 121, 84, 0.6);
+        z-index: -1;
+    }
+}
+.slide__item{
+    min-height: 521px;
+}
+.slide-1{
+    background: url("../img/index/slide-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.slide-2{
+    background: url("../img/index/slide-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.slide-3{
+    background: url("../img/index/slide-3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.slide-news{
+    border-right: 20px solid #fff;
+    border-left: 20px solid #fff;
+    position: relative;
+    .slide-info{
+        position: absolute;
+        bottom: 0;
+        background: rgba(235, 121, 84, 0.8);
+        max-width: 413px;
+        min-height: 124px;
+        margin-left: 32px;
+        margin-bottom: 32px;
+        a{
+            font-family: "Bebas Neue", cursive;
+            font-size: 32px;
+            color: #fff;
+            margin-top: 20px;
+            margin-bottom: 12px;
+            margin-left: 20px;
+        }
+        p{
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            font-size: 12px;
+            color: #fff;
+        }
+        a:hover{
+            color: #eeeeee;
+            transition: all ease 0.4s;
+        }
+    }
+    button{
+        position: absolute;
+        background: transparent;
+        top: 41%;
+        z-index: 2;
+    }
+    button:first-child{
+        left: 17px;
+    }
+    button:last-child{
+        right: 17px;
+    }
+    button:hover{
+        transform: translate(0, -5px);
+        transition: all ease 0.4s;
+    }
+}
+#last-news{
+    margin-top: 20px;
+}
+.last-news__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.last-news__image-links{
+    a{
+        margin-right: 20px;
+    }
+    a:last-child{
+        margin-right: 0;
+    }
+    a:hover{
+        transform: translate(0, -5px);
+        transition: all ease 0.4s;
+    }
+}
+.last-news__info{
+    max-width: 290px;
+    .last-news__title{
+        margin-top: 25px;
+        margin-bottom: 23px;
+        a{
+            display: flex;
+            font-family: "Bebas Neue", cursive;
+            font-size: 22px;
+            line-height: 22px;
+            color: #e8663c;
+            max-width: 250px;
+            span{
+                margin-left: 20px;
+            }
+            img{
+                height: 40px;
+            }
+        }
+    }
+    .last-news__title:hover{
+        a{
+            font-size: 21px;
+            transition: all ease 0.4s;
+        }
+    }
+    .last-news__text{
+        p{
+            font-size: 12px;
+            line-height: 18px;
+            color: #414141;
+            margin-bottom: 30px;
+        }
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Bebas Neue", cursive;
+            width: 56px;
+            min-height: 30px;
+            background: #e8663c;
+            font-size: 20px;
+            color: #fff;
+        }
+        a:hover{
+            color: #eeeeee;
+            font-size: 19px;
+            transition: all ease 0.4s;
+        }
+    }
+}
+#recent-works{
+    margin-top: 46px;
+    margin-bottom: 48px;
+}
+.recent-works__items{
+    .grid-x{
+        .cell{
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+.recent-works__title{
+    a{
+        font-family: "Bebas Neue", cursive;
+        font-size: 32px;
+        color: #e8663c;
+    }
+    a:hover{
+        color: #b9b9b9;
+        transition: all ease 0.4s;
+    }
+    margin-bottom: 20px;
+}
+.recent-works__title:after{
+    content: "";
+    display: inline-block;
+    background: url("../img/index/title-effect.png");
+    width: 85%;
+    height: 20px;
+    margin-left: 20px;
+}
+.recent-work__card-info{
+    border-bottom: 1px solid #b9b9b9;
+    border-left: 1px solid #b9b9b9;
+    border-right: 1px solid #b9b9b9;
+    margin-top: -4px;
+    padding-top: 10px;
+    padding-left: 12px;
+    p{
+        font-family: "Bebas Neue", cursive;
+        font-size: 22px;
+        color: #b9b9b9;
+    }
+    p:last-child{
+        padding-bottom: 11px;
+        font-size: 18px;
+        color: #e8663c;
+    }
+}
+.recent-work__link:hover{
+    transform: translate(0, -10px);
+    transition: all ease 0.4s;
+}
+//media queries for index.html
+@media screen and (max-width: 1180px) {
+    .recent-works__title{
+        text-align: center;
+    }
+    .recent-works__title:after{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 1023.9px) {
+    .recent-card-3, .recent-card-4, .news-card-3{
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 639.9px) {
+    .recent-card-2, .news-card-2{
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 595px) {
+    .recent-works__title:after{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 538px) {
+    .slide-news{
+        .slide-info{
+            margin: 20px 20px;
+            max-width: 100%;
+        }
+    }
+}
+@media screen and (max-width: 420px) {
+    .slider-news__wrapper{
+        .grid-container{
+            padding: 0;
+        }
+        .grid-container:before{
+            display: none;
+        }
+    }
+    .slide-news{
+        border: none;
+    }
+}
+@media screen and (max-width: 366px) {
+    .recent-works__title:after{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 338px) {
+    .last-news__image-links a{
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width: 315px) {
+    .last-news__image-links{
+        a{
+            display: flex;
+            margin: 0;
+        }
+        a:first-child{
+            margin-bottom: 20px;
+        }
+    }
+}

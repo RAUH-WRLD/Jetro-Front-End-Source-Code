@@ -1,0 +1,228 @@
+//import global styles
+@import "../styles/style.scss";
+//navigation
+.navigation{
+    nav{
+        a:nth-child(5){
+            color: #e8663c;
+        }
+    }
+}
+//main
+#contact-page{
+    margin-top: 24px;
+}
+.contact__title-wrapper{
+    position: relative;
+    .grid-container:before{
+        content: "";
+        display: inline-block;
+        position: absolute;
+        min-width: 100%;
+        left: 0;
+        height: 61px;
+        background: rgba(235, 121, 84, 0.6);
+        z-index: -1;
+    }
+}
+.contact__title-item{
+    font-family: "Bebas Neue", cursive;
+    background: #e8663c;
+    min-height: 61px;
+    border-left: 20px solid #fff;
+    border-right: 20px solid #fff;
+    p{
+        color: #fff;
+        font-size: 32px;
+        padding-top: 14px;
+        padding-left: 20px;
+    }
+}
+.contact-map{
+    margin-left: 20px;
+    iframe{
+        width: 100%;
+    }
+}
+.contact__info-item{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    margin-bottom: 37px;
+}
+.contacts{
+    display: flex;
+    flex-direction: column;
+    width: 211px;
+    padding-left: 20px;
+    p:first-child{
+        font-size: 13px;
+        line-height: 18px;
+    }
+    p:nth-child(2){
+        margin-top: 10px;
+        color: #e8663c;
+    }
+    p:nth-child(5){
+        margin-bottom: 10px;
+    }   
+    p:nth-child(2), p:nth-child(3), p:nth-child(4), p:nth-child(5){
+        font-size: 12px;
+        line-height: 15px;
+    }
+    a{
+        width: 0;
+        white-space: nowrap;
+        color: #000;
+        font-size: 14px;
+        line-height: 18px;
+        span{
+            font-weight: 700;
+        }
+    }
+}
+.form{
+    width: 463px;
+    display: flex;
+    flex-direction: column;
+    input, textarea{
+        font-family: "Bebas Neue", cursive;
+        outline: none;
+        border: 1px solid #e8663c;
+        min-height: 32px;
+        width: 215px;
+        margin-bottom: 10px;
+    }
+    input::placeholder, textarea::placeholder{
+        color: #e8663c;
+        padding-left: 10px;
+    }
+    textarea::placeholder{
+        padding-top: 10px;
+    }
+    :focus::-webkit-input-placeholder {color: transparent;}
+    :focus::-moz-placeholder          {color: transparent;}
+    :focus:-moz-placeholder           {color: transparent;}
+    :focus:-ms-input-placeholder      {color: transparent;}
+    .message{
+        width: 100%;
+        min-height: 203px;
+        resize: none;
+    }
+    .submit{
+        font-family: "Bebas Neue", cursive;
+        background: #e8663c;
+        color: #fff;
+        max-width: 65px;
+        min-height: 30px;
+    }
+}
+.about-jetro__title, .categories__title, .photo-gallery__title{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    color: #e8663c;
+    font-family: "Bebas Neue", cursive;
+}
+.about-jetro__title:after{
+    content: "";
+    display: inline-block;
+    background-image: url("../../img/about/title-effect-1.png");
+    margin-top: 5px;
+    margin-left: 14px;
+    width: 126px;
+    height: 14px;
+}
+.categories__title:after{
+    content: "";
+    display: inline-block;
+    background-image: url("../../img/about/title-effect-2.png");
+    margin-top: 5px;
+    margin-left: 14px;
+    width: 135px;
+    height: 14px;
+}
+.photo-gallery__title:after{
+    content: "";
+    display: inline-block;
+    background-image: url("../../img/about/title-effect-3.png");
+    margin-top: 5px;
+    margin-left: 14px;
+    width: 114px;
+    height: 14px;
+}
+.about-jetro__info, .categories__info, .photo-gallery__info{
+    margin-top: 22px;
+    margin-bottom: 37px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    max-width: 220px;
+}
+.categories__info{
+    display: flex;
+    flex-direction: column;
+    a{
+        white-space: nowrap;
+        width: 0;
+        color: #000;
+    }
+    a:hover{
+        color: #414141;
+        transition: all ease 0.4s;
+    }
+}
+//media queries for contact.html
+@media screen and (max-width: 1023.9px) {
+    #contact-page{
+        margin-bottom: 45px;
+    }
+    .contact-map{
+        margin-left: 0;
+    }
+    .form{
+        padding-right: 20px;
+    }
+    .about-jetro__info, .categories__info, .photo-gallery__info{
+        margin-top: 22px;
+        max-width: none;
+        text-align: center;
+    }
+    .categories__info{
+        display: block;
+        a{
+            width: auto;
+            margin-right: 10px;
+        }
+        a:last-child{
+            margin-right: 0;
+        }
+    }
+    .about-us__info{
+        .grid-x{
+            .cell:nth-child(2) {
+                margin-top: 24px;
+            }
+        }
+    }
+    .photo-gallery__info{
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 770px) {
+    .contact__info-item{
+        flex-direction: column;
+    }
+    .contacts, .form{
+        width: auto;
+        padding: 0;
+    }
+    .contacts{
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width: 540px) {
+    .categories__info a{
+        line-height: 25px;
+    }
+}
